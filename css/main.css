@@ -136,26 +136,32 @@ a:hover {
   }
 }
 
+header {
+	background-image: url(/img/background.png);
+	height: 1000px;
+	background-size: 2048px;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 /* End Navbar */
 
-#head {
-	background-image: url("https://i.imgur.com/9GkIEjN.png");
+/* #head {
+	background-repeat: no-repeat;
+	background-position: center;
 	margin: 0;
-	padding: 222px 0px 222px 0px;
 	text-align: center;
-	color: white;
-}
+} */
 
-#head h1 {
+header h1 {
 	font-size: 55px;
 	font-weight: 700;
-	text-transform: uppercase;
+	color: #dbd511;
+
+	
 }
 
-#head h3 {
-	font-size: 22px;
-	text-transform: uppercase;
-}
 
 #about {
 	margin: 10px;
@@ -295,7 +301,6 @@ a:hover {
 	margin: 10px;
 	text-align: center;
 	padding-top: 66px;
-	padding-bottom: 66px;
 }
 
 #gamemodes h1 {
@@ -448,3 +453,8 @@ footer {
 	.res-img-sm {
 		width: 100%;	}
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }

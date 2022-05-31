@@ -43,34 +43,31 @@
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
 </head>
 <body>
-
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
 	
 	<!-- Navbar -->
-	<div class="topnav" id="myTopnav">
-		<div class="max-width">
-			<col>
-			  <img src="/img/VInaMC FN-okie-02.png" style="width: 5%; margin-top: 10px">
-			  <a href="#head">Trang Chủ</a>
-			  <a href="#about">About</a>
-			  <a href="#gamemodes">Thể Loại</a>
-			  <a href="#vote">Vote</a>
-			  <a href="#">Đăng ký</a>
-			  <a href="">Nạp Thẻ</a>
-		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		    </col>
-		</div>
+	<div class="topnav">	
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><img src="/img/VInaMC FN-okie-02.png" style="width: 35%; margin-top: 10px;"></li>
+				<li class="nav-item  "><a href="#head" class="nav-link active">Trang Chủ</a></li>
+				<li class="nav-item "><a class="nav-link" href="#gamemodes">Lối chơi</a></li>
+				<li class="nav-item "><a class="nav-link" href="#vote">Vote</a></li>
+				<li class="nav-item "><a class="nav-link" href="register.html">Đăng ký</a></li>
+				<li class="nav-item "><a class="nav-link" href="">Nạp Thẻ</a></li>
+		    </ul>
 	</div>
 	<!-- End Navbar -->
-
 	<!-- Header (Banner) -->
-	<header id="head" class="">
+	<header>
+		<div style="padding: 255px 0px 255px 0px" >
 		<img src="/img/logo.png">
-        <h1 style="color: black;">Chiến trường bất bại</h1>
-		<h1 style="color: black">Thắng bại tại kỹ năng</h1>
+        <h1>Chiến trường bất bại</h1>
+		<h1 >Thắng bại tại kỹ năng</h1>
+	</div>
 	</header>
 	<!-- End Header -->
 
@@ -125,7 +122,7 @@
 	<!-- End about section -->
 
 	<!-- Banner 1 -->
-	<section id="banner" class="parallax">
+	<section id="banner" class="parallax" style="background-image: url(/img/banner.png);">
 		<h1>Bạn còn chờ điều gì nữa chứ ?</h1>
 		<h2>Tham gia với chúng tôi ngay nào <i>Vinamc.vn</i></h2>
 	</section>
@@ -133,14 +130,14 @@
 
 	<!-- Gamemodes Section -->
 	<section id="gamemodes">
-		<h1>Các chế độ chơi</h1>
+		<h1>Các chế lối chơi</h1>
 		<p>Nội dung và những điều bạn có thể làm trên máy chủ của chúng tôi</p>
 		<hr>
 		<!-- First Gamemode -->
 		<div class="row fixed-width">
 			<div class="col-md mode">
 				<h2>MMORPG</h2>
-				<p>Lối chơi chính của máy chủ Vinamc. Chúng tôi đưa các bạn đến một lối chơi độc đáo mà không có máy chủ nào tại Việt Nam có thể làm được như chúng tôi. Hệ thông kỹ năng được sử dụng thuật toán để tính toán sát thương. Hệ thống class đa dạng có thể nâng cấp class khi các bạn đủ điều kiện và còn có các hệ class khắc chế nhau.....</p>
+				<p>Lối chơi chính của máy chủ Vinamc. Chúng tôi đưa các bạn đến một lối chơi độc đáo mà không có máy chủ nào tại Việt Nam có thể làm được như chúng tôi. Hệ thông kỹ năng được sử dụng thuật toán để tính toán sát thương. Hệ thống class đa dạng có thể nâng cấp class khi các bạn đủ điều kiện và còn có các hệ class khắc chế nhau...<a href="/rpg.html">Xem thêm....</a></p>
 			</div>
 			<!-- Gamemode Image -->
 			<div class="col-md img">
@@ -154,110 +151,113 @@
 			<div class="row fixed-width">
 				<!-- Image Second Gamemode -->
 					<div class="col-md img">
-						<img class="res-img" src="https://via.placeholder.com/1920x1080">
+						<img class="res-img" src="/img/towny.jpg">
 					</div>
 				<!-- End Image Second Gamemode -->
 				<div class="col-md mode">
-					<h2>FACTIONS</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elementum justo. Morbi in venenatis dui. Mauris quis efficitur orci, ut venenatis massa. Pellentesque gravida ante sit amet condimentum tristique. Suspendisse at gravida nunc, mattis sagittis velit. Pellentesque molestie mauris risus, et elementum metus mattis sit amet. Aliquam id ex ac augue tempor convallis. Nunc id consequat nibh. Suspendisse rhoncus nulla at nisl egestas vulputate vel vitae ex. In est nibh, tempus vitae ipsum vel, eleifend dictum diam. Ut dapibus massa sed turpis dictum pretium. Mauris tempus sapien sit amet turpis sodales, sit amet sollicitudin augue tincidunt. Donec ullamcorper suscipit laoreet.</p>
+					<h2>TOWNY</h2>
+					<p>Towny là một chết độ chơi gần gũi nhất với Minecraft Single Play truyền thống. Ngoài việc sinh tồn giữa thiên nhiên và chiến đấu với bầy quái vật thì bạn sẽ có thêm một chút “bận rộn” đến từ những người chơi khác. Cuộc sống của bạn trong thế giới Minecraft sẽ trở nên đầy sôi động.</p>
+					<p>Thị trấn là phần cơ bản nhất của Towny, cho phép mọi người tập hợp và làm việc cùng nhau như một nhóm. Một thị trấn cũng có một ngân hàng mà thị trưởng có thể rút khỏi.Một thị trưởng cũng có những trợ lý có cùng quyền hạn với chính mình.Thị trấn có thể có thuế.Một người chỉ có thể là cư dân của 1 thị trấn .Thị trấn được chia rộng hay không là tùy vào số cư dân đang trong thị trấn</p>
+					<p>Thị trấn có điểm khác biệt là có thể phân chia đất . bán đất (plot),Hệ thống cấp bậc phong phú.</p>
+					<p>Town là mảnh đất Hoang đã được một chủ đất mua lại, thành lập thị trấn riêng và tổ chức các hoạt động xây dựng, sinh tồn…</p>
 				</div>
 			</div>
 			<!-- End Second Gamemode -->
 		</section>
 		<!-- Start Third Gamemode -->
-		<div class="row fixed-width">
-			<div class="col-md mode">
+		<!-- <div class="row fixed-width"> -->
+			<!-- <div class="col-md mode">
 				<h2>CREATIVE</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu elementum justo. Morbi in venenatis dui. Mauris quis efficitur orci, ut venenatis massa. Pellentesque gravida ante sit amet condimentum tristique. Suspendisse at gravida nunc, mattis sagittis velit. Pellentesque molestie mauris risus, et elementum metus mattis sit amet. Aliquam id ex ac augue tempor convallis. Nunc id consequat nibh. Suspendisse rhoncus nulla at nisl egestas vulputate vel vitae ex. In est nibh, tempus vitae ipsum vel, eleifend dictum diam. Ut dapibus massa sed turpis dictum pretium. Mauris tempus sapien sit amet turpis sodales, sit amet sollicitudin augue tincidunt. Donec ullamcorper suscipit laoreet.</p>
-			</div>
+			</div> -->
 			<!-- Image Third Gamemode -->
-			<div class="col-md img">
+			<!-- <div class="col-md img">
 				<img class="res-img" src="https://via.placeholder.com/1920x1080">
-			</div>
+			</div> -->
 			<!-- End Image Third Gamemode -->
-		</div>
+		<!-- </div> -->
 		<!-- End Third Gamemode -->
 	</section>
 	<!-- End Gamemode Section -->
 
 	<!-- Start Second Banner -->
-	<section id="banner2" class="parallax">
-		<h1>LOOKING TO BUY A RANK?</h1>
-		<h2>CHECK OUT THE STORE AT <i><a href="#">STORE.YOURDOMAIN.COM</a></i></h2>
+	<section id="banner2" class="parallax" style="background-image: url(/img/banner1.png);">
+		<h1 >LOOKING TO BUY A RANK?</h1>
+		<h2 >CHECK OUT THE STORE AT <i><a href="#">STORE.YOURDOMAIN.COM</a></i></h2>
 	</section>
 	<!-- End Second Banner -->
 
 	<!-- Vote Section -->
 	<section id="vote">
-		<h1>VOTE FOR OUR SERVER</h1>
-		<p>Vote for some really amazing rewards</p>
+		<h1>VOTE CHO MÁY CHỦ VINAMC</h1>
+		<p>Bình chọn cho một số phần thưởng thực sự tuyệt vời</p>
 		<hr>
 		<div class="row votelist">
 			<!-- First Vote Link -->
 			<div class="col-md voteblock">
 				<img class="res-img-sm" src="https://www.planetminecraft.com/images/layout/planetminecraft_logo.png">
 				<h2>PlanetMinecraft</h2>
-				<a href="#">Vote now</a>
+				<a href="https://www.planetminecraft.com/server/server-minecraft-viet-nam-vinamc/vote/">Vote now</a>
 			</div>
 			<!-- End First Vote Link -->
 
 			<!-- Second Vote Link -->
-			<div class="col-md voteblock">
+			<!-- <div class="col-md voteblock">
 				<img class="res-img-sm" src="https://yt3.ggpht.com/-St0amFDpbC0/AAAAAAAAAAI/AAAAAAAAAAA/eZlt0WfF-F8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
 				<h2>ServerPact</h2>
 				<a href="#">Vote now</a>
-			</div>
+			</div> -->
 			<!-- End Second Vote Link -->
 
 			<!-- Third Vote Link -->
-			<div class="col-md voteblock">
+			<!-- <div class="col-md voteblock">
 				<img class="res-img-sm" src="https://minecraft-server-list.com/minelog/wp-content/uploads/High-Res-App-Icon.jpg">
 				<h2>MinecraftMP</h2>
 				<a href="#">Vote now</a>
-			</div>
+			</div> -->
 			<!-- End Third Vote Link -->
 		</div>
 
 		<!-- Note -->
-		<p>Please note that sometimes rewards can take up to 10 minutes to receive, if you don't receive any rewards, please contact a staff member.</p>
+		<p>Xin lưu ý rằng đôi khi phần thưởng có thể mất đến 10 phút để nhận được, nếu bạn không nhận được bất kỳ phần thưởng nào, vui lòng liên hệ với nhân viên.</p>
 	</section>
 	<!-- End Vote Section -->
 
 	<!-- Third Banner -->
-	<section id="banner3" class="parallax">
-		<h1>HAVE A QUESTION?</h1>
-		<h2>CONTACT US AT <i><a href="mailto:#">CONTACT@YOURDOMAIN.COM</a></i></h2>
+	<section id="banner3" class="parallax" style="background-image: url(/img/banner2.png);">
+		<h1 >BẠN CÓ MỘT CÂU HỎI?</h1>
+		<h2 >LIÊN HỆ VỚI CHÚNG TÔI TẠI <i><a href="mailto:#">hotro@vinamc.vn</a></i></h2>
 	</section>
 	<!-- End Third Section -->
 
 	<!-- Staff Section -->
 	<section id="staff">
-		<h1>OUR STAFF</h1>
-		<p>The staff members of our server</p>
+		<h1>NHÂN VIÊN CỦA Vinamc</h1>
+		<p>Các nhân viên của máy chủ Vinamc</p>
 		<hr>
 		<!-- First Row Staff -->
 		<div class="row stafflist">
 			<!-- First Staff Member -->
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
+				<img width="180px;" src="/img/owner.jpg">
+				<h2>WildAsian</h2>
 				<p>Owner</p>
 			</div>
 			<!-- End First Staff Member -->
 
 			<!-- Second Staff Member -->
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
-				<p>Co-Owner</p>
+				<img width="180px;" src="/img/ql.jpg">
+				<h2>NguyenQuocLam</h2>
+				<p>developer</p>
 			</div>
 			<!-- End Second Staf Member -->
 
 			<!-- Third Staff Member -->
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
-				<p>Admin</p>
+				<img width="180px;" src="/img/alex.jpg">
+				<h2>Alexzvn</h2>
+				<p>developer</p>
 			</div>
 			<!-- End Third Staff Member -->
 		</div>
@@ -267,24 +267,24 @@
 		<div class="row stafflist">
 			<!-- Fourth Staff Member -->
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
-				<p>Admin</p>
+				<img width="150px;" src="/img/vy.jpg">
+				<h2>Vỹ</h2>
+				<p>GameMaster</p>
 			</div>
 			<!-- End Fourth Staff Member -->
 
 			<!-- Fifth Staff Member -->	
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
+				<img width="180px;" src="/img/satthu.jpeg">
+				<h2>SatThu</h2>
 				<p>Moderator</p>
 			</div>
 			<!-- End Fifth Staff Member -->
 
 			<!-- Sixth Staff Member -->
 			<div class="col-md staffblock">
-				<img width="100px;" src="https://mamaneedsahobby.files.wordpress.com/2013/09/steve-face.jpg?w=1000&h=">
-				<h2>Some dude</h2>
+				<img width="180px;" src="/img/zodasic.jpg">
+				<h2>Zodasic</h2>
 				<p>Moderator</p>
 			</div>
 			<!-- End Sixth Staf Member -->
@@ -298,9 +298,9 @@
 		<div class="footer">
 			<div class="copyright-notice">
 				<!-- !! Replace this with your own domain !! -->
-				<p>yourdomain.com &copy; | All rights reserved</p>
+				<p>Vinamc.vn &copy; | Đã đăng ký Bản quyền</p>
 				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
-				<p>Made with <font color="red">❤</font> by <a target="_blank" href="https://www.rickklaasboer.online/">Rick Klaasboer</a>.</font></p>
+				<p>Được thực hiện bởi <font color="red">❤</font><a target="_blank" href="https://www.facebook.com/dev.vinamc/">Quốc Lâm</a>.</font></p>
 			</div>
 		</div>
 	</footer>
