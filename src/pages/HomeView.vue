@@ -8,6 +8,15 @@ import skyblock from '@/assets/img/2022-03-31-22-11-40.png'
 import lightning from '@/assets/icon/lightning-bolt.svg'
 import user from '@/assets/icon/user-group.svg'
 import shield from '@/assets/icon/shield-check.svg'
+import calendar from '@/assets/icon/calendar.svg'
+import code from '@/assets/icon/code.svg'
+import trending from '@/assets/icon/trending-up.svg'
+import ql from '@/assets/img/ql.jpg'
+import owner from '@/assets/img/owner.jpg'
+import alex from '@/assets/img/alex.jpg'
+import kay from '@/assets/img/kay.jpg'
+import satthu from '@/assets/img/satthu.jpeg'
+import vy from '@/assets/img/vy.jpg'
 
 const background = 'background-image: url('+backrpg+');'
 </script>
@@ -91,7 +100,7 @@ const background = 'background-image: url('+backrpg+');'
 
     <div class="card w-100 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
-        <img src="/icon/calendar.svg" style="width: 100px" alt="Shoes" class="rounded-xl" />
+        <img :src="calendar"  class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
         <h2 class="card-title">Sự kiện tuyệt vời</h2>
@@ -101,7 +110,7 @@ const background = 'background-image: url('+backrpg+');'
 
     <div class="card w-100 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
-        <img src="/icon/code.svg" style="width: 100px" alt="Shoes" class="rounded-xl" />
+        <img :src="code" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
         <h2 class="card-title">Plugin tùy chỉnh</h2>
@@ -111,7 +120,7 @@ const background = 'background-image: url('+backrpg+');'
 
     <div class="card w-100 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
-        <img src="/icon/trending-up.svg" style="width: 100px" alt="Shoes" class="rounded-xl" />
+        <img :src="trending" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
         <h2 class="card-title">Luôn luôn đổi mới</h2>
@@ -148,10 +157,10 @@ const background = 'background-image: url('+backrpg+');'
 
 <div class="min-h-full bg-base-500" >
   <div class="col-start-2 col-span-4  text-center text-5xl m-10 "><strong>Các thành viên chủ chốt của máy chủ</strong></div>
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 staff">
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/owner.jpg" style="width: 200px" oalt="Shes" class="rounded-xl" />
+      <img :src="owner" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">OWNER</h2>
@@ -160,7 +169,7 @@ const background = 'background-image: url('+backrpg+');'
   </div>
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/ql.jpg" style="width: 200px" oalt="Shes" class="rounded-xl" />
+      <img :src="ql"  oalt="Shes" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">DEV</h2>
@@ -169,7 +178,7 @@ const background = 'background-image: url('+backrpg+');'
   </div>
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/alex.jpg" style="width: 200px" alt="Shoes" class="rounded-xl" />
+      <img :src="alex" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">DEV</h2>
@@ -178,7 +187,7 @@ const background = 'background-image: url('+backrpg+');'
   </div>
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/kay.jpg" style="width: 200px" alt="Shoes" class="rounded-xl" />
+      <img :src="kay" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">DEV</h2>
@@ -187,7 +196,7 @@ const background = 'background-image: url('+backrpg+');'
   </div>
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/satthu.jpeg" style="width: 200px" alt="Shoes" class="rounded-xl" />
+      <img :src="satthu" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">MOD</h2>
@@ -196,11 +205,11 @@ const background = 'background-image: url('+backrpg+');'
   </div>
   <div class="card w-100 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
-      <img src="./components/img/zodasic.jpg" style="width: 190px" alt="Shoes" class="rounded-xl" />
+      <img :src="vy" class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">MOD</h2>
-      <p>Zodasic</p>
+      <h2 class="card-title">DEV</h2>
+      <p>Vy</p>
     </div>
   </div>
 </div>
@@ -211,5 +220,9 @@ const background = 'background-image: url('+backrpg+');'
 <style scoped lang="css">
 .option img {
    width: 100px;
+}
+
+.staff img {
+  width: 200px;
 }
 </style>
