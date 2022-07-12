@@ -32,7 +32,7 @@ const background = 'background-image: url('+backrpg+');'
       <div>
         <h1 class="text-5xl font-bold">MMO-RPG</h1>
         <p class="py-6">Một lối chơi nhập vai vào một thế giới mở nhiều nhiệm vụ phong phú theo cốt truyện. Bạn có thể tham gia vào các ngành nghề và sử dụng vũ khí cùng các chiêu thức riêng của ngành nghề đó hỗ trợ việc phiêu lưu của ban....  </p>
-        <button class="btn btn-primary"><a href="/rpg.html">Xem thêm</a></button>
+        <button class="btn btn-primary"><RouterLink to="/rpg">Xem thêm</RouterLink></button>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@ const background = 'background-image: url('+backrpg+');'
       <div>
         <h1 class="text-5xl font-bold">FACTION SURVIVAL</h1>
         <p class="py-6">Một lối chơi sinh tồn được cập nhật thêm chế độ chiếm đất và tạo ra 1 phe phái của riêng mình và bạn bè của bạn. Faction là 1 chế độ chiến tranh không sợ nguy hiểm bị giết bởi quái vật nhưng cũng phải cẩn thận các phe phái của những người chơi khác khi bạn sinh sống trong khu vực của mình...</p>
-        <button class="btn btn-primary"><a href="/faction.html">Xem thêm</a></button>
+        <button class="btn btn-primary"><RouterLink to="/fac">Xem thêm</RouterLink></button>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@ const background = 'background-image: url('+backrpg+');'
       <div>
         <h1 class="text-5xl font-bold ">SKYBLOCK</h1>
         <p class="py-6">Một lối chơi sinh tồn mới lạ khác khi bạn phải sống trên 1 hòn đảo nhỏ bé tí lơ lửng trên trời và bạn chỉ có 1 vài dụng cụ được cho trong rương giúp bạn sinh tồn và mở rộng hòn đảo của bạn....  </p>
-        <button class="btn btn-primary"><a>Xem thêm</a></button>
+        <button class="btn btn-primary"><RouterLink to="/sky">Xem thêm</RouterLink></button>
       </div>
     </div>
   </div>

@@ -23,13 +23,13 @@ const store = useAccountStore();
           </a>
           <ul class="p-2 drop">
             <li ><RouterLink to="/rpg">MMO-RPG</RouterLink></li>
-            <li ><RouterLink to="/" >Faction</RouterLink></li>
+            <li ><RouterLink to="/fac" >Faction</RouterLink></li>
             <li ><RouterLink to="/">Skyblock</RouterLink></li>
             <li ><RouterLink to="/">Prison</RouterLink></li>
           </ul>
         </li>
-        <li><a href="/donate.html">Nạp Thẻ</a></li>
-        <li><a href="/craft.html">Chế tạo</a></li>
+        <li><RouterLink to="/donate">Nạp Thẻ</RouterLink></li>
+        <li><RouterLink to="/">Chế tạo</RouterLink></li>
         <li><a>Ân xá</a></li>
       </ul>
     </div>
@@ -56,7 +56,7 @@ const store = useAccountStore();
         </ul>
       </div>
       <div v-else>
-        <RouterLink to="/reg" class=" btn btn-sm btn-primary">Đăng ký</RouterLink>
+        <RouterLink to="/login" class=" btn btn-sm btn-primary">Đăng Nhập</RouterLink>
       </div>
     </div>
   </div>

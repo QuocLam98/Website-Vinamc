@@ -1,19 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Main from '@/layouts/Main.vue'
+import bg from '@/assets/img/backrpg.png'
+import fac from '@/assets/img/faction.png'
+import Wooden from '@/assets/img/wooden_side_bg.png'
+
+</script>
 
 <template>
-  <faction>
-<main>
-    <div class="hero min-h-screen bg-local" style="background-image: url(./components/img/backrpg.png);">
+<Main>
+    <div class="hero min-h-screen bg-local" :style="'background-image: url('+bg+');'">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content flex-col lg:flex-row-reverse bg-base-200   " >
             <div class="flex flex-col ">
-            <img src="./components/img/faction.png" class="  rounded-lg shadow-2xl" style="width: 2000px" />
+            <img :src="fac" class=" size rounded-lg shadow-2xl"  />
             </div>
 
             <div class="flex flex-col">
               <div class="m-10 text-neutral-900 text-xl font-medium"> <h1>Lối chơi của chế độ Faction</h1></div>
 
-            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) "  tabindex="0" >
+            <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"  tabindex="0" >
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                   Các lệnh cơ bản đến nâng cao trong factions:
@@ -82,7 +87,7 @@
 
               <div class="m-10 text-neutral-900 text-xl font-medium"> <h1>Hướng dẫn sơ lược cách chơi trong Factions </h1></div>
               
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"  tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                   I. Power
@@ -98,7 +103,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"  tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                   II. Claim ( đóng chiếm đất )
@@ -122,7 +127,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"   tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                   III. PvP (Cuộc chiến bang hội)
@@ -146,7 +151,7 @@
             </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"  tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                   IV. Căn cứ, pháo đài
@@ -164,7 +169,7 @@
                 </div>
               </div>
 
-              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" style="background-image: url(./components/img/wooden_side_bg.png) " tabindex="0">
+              <div class="collapse border border-base-300 bg-base-100 rounded-box bg-cover bg-center bg-opacity-60" :style="'background-image: url('+Wooden+');'"  tabindex="0">
                 <input type="checkbox" class="peer" /> 
                 <div class="collapse-title text-neutral-900 text-xl font-medium">
                     Kết luận
@@ -190,6 +195,15 @@
           </div>
         
       </div>
-</main>
-</faction>
+    </Main>
+
+
 </template>
+
+<style scoped lang="css">
+
+.size {
+    width: 2000px;
+}
+
+</style>

@@ -20,6 +20,18 @@ const router = createRouter({
     {
       path: '/reg',
       component: () => import('../pages/Register.vue')
+    },
+    {
+      path: '/login',
+      component: () => import('../pages/Login.vue')
+    },
+    {
+      path: '/fac',
+      component: () => import('../pages/Faction.vue')
+    },
+    {
+      path: '/donate',
+      component: () => import('../pages/Donate.vue')
     }
   ]
 })

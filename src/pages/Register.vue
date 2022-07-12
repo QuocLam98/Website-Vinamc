@@ -61,6 +61,7 @@ store.setUser({name: name.value, role: '', points: 0})
 <template >
 <Authen>
   <div class="bg-local min-h-screen hero " :style="'background-image: url('+bg+')'" >
+  <div>
   <div class="hero-content min-h-full bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <div class="text-center lg:text-left">
@@ -96,7 +97,7 @@ store.setUser({name: name.value, role: '', points: 0})
             <input type="text"  v-model="pass" ref="passInput" placeholder="password" class="input input-bordered" :class="{'input-error': error.pass}" />
              <span v-if="error.pass" class=" text-red-500">Mật khẩu không được để trống</span>
             <label class="label">
-              <a href="/login.html" class="label-text-alt link link-hover">Bạn đã có tài khoản?</a>
+              <RouterLink to="/login" class="label-text-alt link link-hover">Bạn đã có tài khoản?</RouterLink>
             </label>
           </div>
           <div class="form-control mt-6">
@@ -105,6 +106,7 @@ store.setUser({name: name.value, role: '', points: 0})
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 </div>
